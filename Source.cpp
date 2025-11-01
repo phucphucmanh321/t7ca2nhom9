@@ -12,6 +12,12 @@ int hieu(int a,int b)
 {
 	return a-b;
 }
+
+int tich(int a, int b)
+{
+	return a * b;
+}
+
 int main()
 {
 	
@@ -19,6 +25,7 @@ int main()
 	cout<<"Tong =";
 	int a = 10,b=5;// Phan nay cua Khang lam.
 	cout << "Hieu cua " << a << " va " << b << " la: " << hieu(a,b) << endl; // Phan nay cua Khang lam.
+	cout << "Tich cua " << a << " va " << b << " la: " << tich(a, b) << endl; 
 	system("pause");
 	return 0;
 }
