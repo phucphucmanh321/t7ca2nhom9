@@ -21,6 +21,16 @@ int tich(int a, int b)
 	return a * b;
 }
 
+bool SNT(int n)
+{
+	if (n < 2)
+		return false;
+	for (int i = 2; i <= sqrt(n); i++)
+	{
+		if (n % i == 0)
+			return false;
+	}	
+	return true;
 
 int soChanLe(int a)
 {
@@ -40,6 +50,10 @@ int main()
 	cout << "a là số " << kiemTraSoAmDuong(a) ? "Số dương" : "Số âm"<< "\n";
 	cout << "b là số " << kiemTraSoAmDuong(b) ? "Số dương" : "Số âm"<< "\n";
 	cout << "Tich cua " << a << " va " << b << " la: " << tich(a, b) << endl; 
+	if (SNT(a) == true)
+		cout << "La so nguyen to";
+	else
+		cout << "Khong phai so nguyen to";
 	cout << "Hieu cua " << a << " va " << b << " la: " << hieu(a,b) << endl; // Phan nay cua Khang lam.
 	count << "Kiem tra so chan le cua " << a << " : "; // Phan nay cua Khang lam.
 	if(soChanLe(a)==1)
