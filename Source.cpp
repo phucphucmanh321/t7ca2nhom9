@@ -14,6 +14,12 @@ int hieu(int a,int b)
 {
 	return a-b;
 }
+
+int tich(int a, int b)
+{
+	return a * b;
+}
+
 int main()
 {
 	
@@ -23,6 +29,7 @@ int main()
 	cout << "Hiệu của " << a << " và " << b << " là: " << hieu(a,b) << endl; // Phan nay cua Khang lam.
 	cout << "a là số " << kiemTraSoAmDuong(a) ? "Số dương" : "Số âm"<< "\n";
 	cout << "b là số " << kiemTraSoAmDuong(b) ? "Số dương" : "Số âm"<< "\n";
+	cout << "Tich cua " << a << " va " << b << " la: " << tich(a, b) << endl; 
 	system("pause");
 	return 0;
 }
